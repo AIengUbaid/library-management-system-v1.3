@@ -1,0 +1,5 @@
+.env
+library.db
+backups/
+signatures/
+__pycache__/
