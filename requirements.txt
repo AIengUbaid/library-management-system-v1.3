@@ -1,5 +1,5 @@
 streamlit
 python-dotenv
 pandas
-
+supabase
 libsql-client
