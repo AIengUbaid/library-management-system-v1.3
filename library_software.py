@@ -228,7 +228,11 @@ def add_student(name, parentage, student_aadhar, parent_aadhar,
             return False, "Not saved — Supabase returned no confirmation. Check table permissions."
         return True, r.data[0]["id"]
     except Exception as e:
-        return False, _db_err("Could not register student", e)
+        # return False, _db_err("Could not register student", e)
+        # print(e)
+        # import traceback
+        # traceback.print_exc()
+        raise
 
 
 def assign_seat(sid: int, seat: int):
